@@ -24,22 +24,22 @@ public class MainActivity extends Activity {
         tabHost.setup();
         
         TabSpec tabSpec = tabHost.newTabSpec("page1");
-        //tabSpec.setIndicator("Ê×Ò³", getResources().getDrawable(R.drawable.i1));
+        //tabSpec.setIndicator("é¦–é¡µ", getResources().getDrawable(R.drawable.i1));
         
-        //×Ô¶¨Òåtab²¼¾Ö
-        tabSpec.setIndicator(createTabView("Ê×Ò³"));//¶ÔÓ¦ÓÚ<TabWidget>, @android:id/tabs
-        tabSpec.setContent(R.id.page1);//¶ÔÓ¦ÓÚ<FrameLayout>, @android:id/tabcontent
+        //è‡ªå®šä¹‰tabå¸ƒå±€
+        tabSpec.setIndicator(createTabView("é¦–é¡µ"));//è®¾ç½®é€‰é¡¹å¡æŒ‰é’®<TabWidget>, @android:id/tabs
+        tabSpec.setContent(R.id.page1);//è®¾ç½®é€‰é¡¹å¡å†…å®¹<FrameLayout>, @android:id/tabcontent
         tabHost.addTab(tabSpec);
         
         tabSpec = tabHost.newTabSpec("page2");
-       // tabSpec.setIndicator("µÚ¶şÒ³", getResources().getDrawable(R.drawable.i2));
-        tabSpec.setIndicator(createTabView("µÚ¶şÒ³"));
+       // tabSpec.setIndicator("ç¬¬äºŒé¡µ", getResources().getDrawable(R.drawable.i2));
+        tabSpec.setIndicator(createTabView("ç¬¬äºŒé¡µ"));
         tabSpec.setContent(R.id.page2);
         tabHost.addTab(tabSpec);
         
         tabSpec = tabHost.newTabSpec("page3");
-        //tabSpec.setIndicator("µÚÈıÒ³", getResources().getDrawable(R.drawable.i7));
-        tabSpec.setIndicator(createTabView("µÚÈıÒ³"));
+        //tabSpec.setIndicator("ç¬¬ä¸‰é¡µ", getResources().getDrawable(R.drawable.i7));
+        tabSpec.setIndicator(createTabView("ç¬¬ä¸‰é¡µ"));
         tabSpec.setContent(R.id.page3);
         tabHost.addTab(tabSpec);
         
